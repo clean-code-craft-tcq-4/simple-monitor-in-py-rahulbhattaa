@@ -1,7 +1,7 @@
 
 def battery_is_ok(temperature, soc, charge_rate):
   
-  if (temp_is_okay(temperature) and soc_is_okay(soc) and charge_rate_is_okay(charge_rate)):
+  if(temp_is_okay(temperature) and soc_is_okay(soc) and charge_rate_is_okay(charge_rate)):
     return True
 
   return False
@@ -29,9 +29,6 @@ def charge_rate_is_okay(charge_rate):
     return False
   
   return True
-
-
-
 
 if __name__ == '__main__':
   assert(battery_is_ok(25, 70, 0.7) is True)
